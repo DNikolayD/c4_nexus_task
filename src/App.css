@@ -1,5 +1,61 @@
+
+.item1 { grid-area: header; overflow-y: scroll; overflow-x: hidden ; }
+.item2 { grid-area: filter; }
+.item3 { grid-area: name;}
+.item4 { grid-area: sort; overflow-y: scroll; overflow-x: hidden ;}
+.item5 { grid-area: main; overflow: hidden;}
+.item6 { grid-area: more; }
+.item7 { grid-area: footer; }
+
+@media(orientation: landscape) {
+  .grid-container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas:
+      'header header header header header header'
+      'filter name name name name sort'
+      'filter main main main main main'
+      'more more more more more more'
+      'footer footer footer footer footer footer';
+  }
+}
+
+
+
+@media(orientation: portrait) {
+.item1 { grid-area: header; overflow: hidden;}
+.item2 { grid-area: filter; max-width: fit-content; max-width: 100%; overflow: hidden; }
+.item3 { grid-area: name; max-width: fit-content; max-width: 100%; overflow: hidden;}
+.item4 { grid-area: sort;  max-width: fit-content; max-width: 100%; overflow: hidden;}
+.item5 { grid-area: main; overflow: hidden; max-width: fit-content; max-width: 100%;}
+.item6 { grid-area: more; max-width: fit-content; max-width: 100%;}
+.item7 { grid-area: footer; max-width: fit-content; max-width: 100%;}
+  
+  .grid-container{
+    display: grid;
+    grid-template-areas: 
+    'header'
+    'filter'
+    'sort'
+    'name'
+    'main'
+    'more'
+    'footer';
+  }
+}
+
+html, body{
+  overflow: auto;
+  min-height: 100vh;
+}
+
+#root{
+min-height: 100vh;
+}
+
 .App {
   text-align: center;
+  min-height: 100vh;
 }
 
 .App-logo {

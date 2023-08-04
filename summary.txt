@@ -1,0 +1,30 @@
+summary of all implemented requrements in the order given in the task:
+
+
+1 Header and navigation
+a. I create logo thanks to a free web site dowloaded it at added it at the beginning of the header commponent as a simple img tag.
+b. I create a navigation menu with 4 different categories of items. Since I used react for this task the categories are used as filter rather than as links to new pages since that is the main way React operates. The filtering was created by using useState to keep track of the current "filter" and then I use the function "filter" to filter the array of objets.
+c. I made the menu 'sticky' by giving the header a position: fixed in the Header.css file.
+2 Product counter. A simple div containing the amount of products after all of the applied filter but before taking the first X of them where X is amount displayed before the button is clicked plus the same base amount added for every click of the add more button.
+3 Product grid
+a. rendering X amounts of single item where X is the number of items in the array after all of the filtering and sorting has taken place.
+b. number of base rows is one (3 item) as the amount of items is of no significance.
+c. item tile contains: image (in the form of a blank) a name a short description a price, stars rating in the form of filled up stars and a add button that creates a simple alert with the text "Product 
+added to cart"
+4 Filtering mechanism
+a1. price filter in the for of a slider with two points one for max value and one for min value.
+a2 color filter which is a simple div with 4 radio buttons on it
+
+Both filters work by passing the chosen value to the Page component where they are stored as useState variables and the array is filtered when the variables change.
+
+b All of the positioning of the main components (header footer filters sort name main) was done with a simple grid template.
+
+c is already mentioned
+
+5 a simple dropdown passing the values to the Page component where they are used to sort the array (similar to the header filtering and the price and color filtering but with the use of "sort" instead of "filter")
+
+6 a simple div with name and description
+
+7 a simple button component that changes the amount of items that have to be displayed after the filtering,
+
+8 standard footer 

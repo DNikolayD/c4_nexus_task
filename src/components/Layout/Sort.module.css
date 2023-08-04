@@ -1,0 +1,31 @@
+.form {
+    padding-left: 20px;
+    padding-top: 80px;
+}
+
+.label{
+    padding-left: 60px;
+    padding-right: 120px;
+}
+
+@media (orientation: landscape) {
+    .form {
+        padding-left: 20px;
+        padding-top: 80px;
+    }
+    
+    .label{
+        padding-left: 60px;
+        padding-right: 120px;
+    }
+  }
+  
+  @media (orientation: portrait) {
+    .form {
+        padding: 0;
+    }
+    
+    .label{
+        padding-left: 6px;
+    }
+}

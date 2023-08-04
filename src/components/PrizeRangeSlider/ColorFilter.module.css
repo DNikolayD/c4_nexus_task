@@ -1,0 +1,18 @@
+.radio
+  {
+  display : none;
+  }
+.span 
+  {
+  display       : block;
+  border-bottom : 4px solid transparent;
+  padding       : 3px 7px;
+  }
+.span:hover
+  {
+  background-color : #e6e6e6;
+  }
+.radio:checked + .span
+  {
+  border-bottom-color: darkslategray;
+  }

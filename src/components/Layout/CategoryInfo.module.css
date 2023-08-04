@@ -1,0 +1,22 @@
+.list {
+    list-style-type: none;
+    margin: 0;
+    padding-top: 80px;
+    padding-left: 20px;
+    overflow: hidden;
+    background-color: #b1afaf;
+    
+  }
+  
+.name {
+  float: left;
+    padding-right: 20px;
+    font-size: 15px;
+  }
+
+  .description{
+    padding-top: 4px;
+    float: left;
+    font-size: 12px;
+  }
+  
